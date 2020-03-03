@@ -16,7 +16,6 @@ public class Program
 		// ИЗМЕНИТЕ КОД ЭТОГО МЕТОДА
 		if (source == null) throw new ArgumentNullException();
 
-
 		ArrayList list = new ArrayList();
 		for (int i = 0;i<source.Length;i++)
 		{
