@@ -22,7 +22,6 @@ public class Program
             else return name1.CompareTo(name2);
         }
 
-
         return array;
     }
 
