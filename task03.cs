@@ -17,11 +17,15 @@ public class Program
 		if (source == null) throw new ArgumentNullException();
 
 		ArrayList list = new ArrayList();
-		for (int i = 0;i<source.Length;i++)
+		for (int i = 0; i < source.Length - 1; i++)
 		{
-			for (int j = 0; j < source.Length; j++)
+			for (int j = i + 1; j < source.Length; j++)
 			{
-				if (source[i] == source[j] && list.IndexOf(j) ==-1 && j != i) list.Add(j);
+				if (source[i] == source[j] && list.IndexOf(j) == -1)
+				{
+					list.Add(j);
+					if (list.IndexOf(i) == -1) list.Add(i);
+				}
 			}
 		}
 
