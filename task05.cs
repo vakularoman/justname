@@ -19,8 +19,6 @@ public class Program
 		int[] arr = new int[end - start + 1];
 		for (int i = 0; i < arr.Length; i++) arr[i] = start + i;
 
-		int[] mas = Array.FindAll(arr, IsPrime);
-
 		return Array.FindAll(arr, IsPrime);
 	}
 
@@ -28,8 +26,7 @@ public class Program
 
 	static bool IsPrime(int numb)
 	{
-		bool prime = true;
-		for (int i = 2; i<numb;i++)
+		for (int i = 2; i < numb; i++)
 		{
 			if (numb % i == 0) return false;
 		}
